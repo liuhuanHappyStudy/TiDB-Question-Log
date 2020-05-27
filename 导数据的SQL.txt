@@ -1,0 +1,27 @@
+SELECT MAX(id) FROM base_charge;
+-- 11984681
+SELECT * FROM base_charge WHERE id > 11984681 AND merchant_id IN (30075, 30517, 30530, 30709, 30796);
+
+
+SELECT MAX(id) FROM `daily_merchant_collect`;
+-- 1370704
+SELECT * FROM daily_merchant_collect WHERE id > 1370704 AND merchant_id IN (30075, 30517, 30530, 30709, 30796);
+
+SELECT * FROM daily_merchant_collect_detail WHERE daily_merchant_collect_id IN (1370704);
+
+
+
+SELECT MAX(id) FROM `daily_operator_collect`;
+-- 1420131
+SELECT * FROM daily_store_collect WHERE id > 1420131 AND merchant_id IN (30075, 30517, 30530, 30709, 30796);
+
+SELECT * FROM daily_store_collect_detail WHERE daily_store_collect_id IN (1420131);
+
+
+SELECT MAX(id) FROM `daily_operator_collect`;
+-- 1465781
+SELECT * FROM daily_operator_collect WHERE id > 1465781 AND merchant_id IN (30075, 30517, 30530, 30709, 30796);
+
+SELECT * FROM daily_operator_collect_detail WHERE daily_operator_collect_id IN (1465781);
+
+
